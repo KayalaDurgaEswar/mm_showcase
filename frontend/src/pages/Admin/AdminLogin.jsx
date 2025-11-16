@@ -20,12 +20,12 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-light-bg">
+    <div className="flex items-center justify-center min-h-screen bg-background">
       <form
         onSubmit={handleSubmit}
-        className="bg-card-bg p-8 rounded-lg shadow-neumorphic w-full max-w-md"
+        className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
       >
-        <h1 className="text-2xl font-manrope mb-6 text-center">Admin Login</h1>
+        <h1 className="text-2xl font-display mb-6 text-center">Admin Login</h1>
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
         <div className="mb-4">
           <label className="block text-sm font-medium mb-2" htmlFor="email">
@@ -36,7 +36,7 @@ export default function AdminLogin() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-1"
+            className="w-full px-4 py-2 border border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
             required
           />
         </div>
@@ -49,13 +49,13 @@ export default function AdminLogin() {
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-1"
+            className="w-full px-4 py-2 border border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full py-2 bg-brand text-white rounded-lg shadow-neumorphic hover:shadow-lg hover:scale-105 transition-transform"
+          className="w-full py-2 bg-primary text-white rounded-lg hover:shadow-lg hover:scale-105 transition-transform"
         >
           Login
         </button>
