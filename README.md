@@ -1,0 +1,1 @@
+M&M Interior Works - Combined MERN scaffold. See backend/.env.example and frontend/.env.example.

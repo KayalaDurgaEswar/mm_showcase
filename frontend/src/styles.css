@@ -1,0 +1,32 @@
+/* Base styles for the modern UI */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F7F7;
+  color: #0C0C0C;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  @apply px-4 py-2 rounded-lg bg-brand text-white shadow-neumorphic;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  @apply bg-card-bg rounded-lg shadow-neumorphic p-4;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
